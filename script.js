@@ -29,6 +29,15 @@ function runTimer() {
 // Match the text entered with the provided text on the page:
 function spellCheck() {
     let textEnteredLength = testArea.value;
+    let originTextMatch = originText.substring(0,textEntered.length);
+
+    if (textEntered == originText){
+
+      testWrapper.style.borderColor = "#429890";
+    }
+    else {
+      textWrapper.style.borderColor ="#E95D0F";
+    }
 }
 
 // Start the timer:
